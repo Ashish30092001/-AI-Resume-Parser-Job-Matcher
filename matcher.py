@@ -26,6 +26,13 @@ def score_fit(profile, job):
     profile_text = " ".join(profile.get("skills", [])) + " " + \
                    " ".join(profile.get("job_titles", [])) + " " + \
                    profile.get("summary", "")
+    # ================================================
+# AI Resume Parser & Job Matcher
+# Built by: Ashish Singh
+# GitHub : github.com/AshishSingh/AI-Resume-Parser
+# LinkedIn: linkedin.com/in/ashish-singh-17704b356
+# © 2026 Ashish Singh — All Rights Reserved
+# ================================================
     
     job_text = job["title"] + " " + job["desc"]
     
