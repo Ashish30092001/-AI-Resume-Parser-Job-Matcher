@@ -1,0 +1,22 @@
+# Secrets — KABHI MAT DAALO
+.env
+*.csv
+already_applied.json
+
+# Resume — personal file
+resume.pdf
+*.pdf
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# VS Code
+.vscode/
+
+# Virtual environment
+venv/
+env/
