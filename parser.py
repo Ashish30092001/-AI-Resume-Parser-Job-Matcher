@@ -21,6 +21,7 @@ def parse_resume_with_ai(resume_text):
     Extract information from this resume and return ONLY valid JSON.
     No markdown, no explanation, just JSON.
     
+    
     Keys required:
     - name (string)
     - email (string)
@@ -34,6 +35,14 @@ def parse_resume_with_ai(resume_text):
     Resume:
     {resume_text[:3000]}
     """
+    # ================================================
+# AI Resume Parser & Job Matcher
+# Built by: Ashish Singh
+# GitHub : github.com/AshishSingh/AI-Resume-Parser
+# LinkedIn: linkedin.com/in/ashish-singh-17704b356
+# © 2025 Ashish Singh — All Rights Reserved
+# ================================================
+    
     
     response = client.chat.completions.create(
         model="llama3-8b-8192",
@@ -54,6 +63,13 @@ def get_profile(resume_path=None):
     
     print(f"📄 Resume padh raha hoon: {path}")
     text = extract_text_from_pdf(path)
+    # ================================================
+# AI Resume Parser & Job Matcher
+# Built by: Ashish Singh
+# GitHub : github.com/AshishSingh/AI-Resume-Parser
+# LinkedIn: linkedin.com/in/ashish-singh-17704b356
+# © 2025 Ashish Singh — All Rights Reserved
+# ================================================
     
     print("🤖 AI profile extract kar raha hai...")
     profile = parse_resume_with_ai(text)
